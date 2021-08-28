@@ -45,12 +45,15 @@ nav{
 }
 
 .menu-icon{
-    background-image: url(../imgs/icon.png);
+    background-color: var(--primary-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 4rem;
     width: 12rem;
     height: auto;
+
+    /*dejar borde en 0 para quitarselo al botn*/
+    border: 1;
 
 
 }
