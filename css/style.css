@@ -72,12 +72,24 @@ nav{
     width: 100%;
     font-size: 2rem;
     height: 100%;
-    
+
+    left: 100%;
+    transition: left 0.3s;
+
     /*height: calc(100% - 6rem);
     /*height: 100%;
     font-size: 2rem;
     overflow-y: auto;*/
 }
+
+ul li a:hover,
+ul li .menu-link_active {
+    background-color: var(--primary-color);
+    transition: 0.2s;
+    color: #a12b10;
+}
+
+
 
 .menu-options li {
     border: blue solid 1px;
@@ -94,4 +106,8 @@ nav{
     text-decoration: none;
     padding: 20px 0;
     color: white;
+}
+
+.nav-menu_visible{
+    left: 0;
 }
