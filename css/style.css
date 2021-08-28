@@ -189,7 +189,6 @@ main{
 .second{
     width: 100%;
     height: auto;
-    border: orangered solid 1px;
     padding: 2rem 4rem;
 }
 
@@ -212,4 +211,11 @@ main{
 .imggg{
     width: 100%;
     height: auto;
+}
+
+.third{
+    width: 100%;
+    height: auto;
+    border: orangered solid 1px;
+    padding: 2rem 4rem;
 }
