@@ -70,12 +70,17 @@ nav{
     left: 0;
     top: 60px;
     width: 100%;
+
+    height: 100%;
+    font-size: 2rem;
 }
 
 .menu-options li {
     border: blue solid 1px;
     width: max-content;
     display: flex;
+
+    margin: 3rem 0rem;
 
     
 }
@@ -85,7 +90,4 @@ nav{
     text-decoration: none;
     padding: 20px 0;
     color: white;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
 }
