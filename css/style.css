@@ -36,7 +36,6 @@ nav{
 }
 
 .nav_logo{
-    border: blue solid 1px;
     background-image: url(../imgs/Logo.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -46,7 +45,6 @@ nav{
 }
 
 .menu-icon{
-    border: blue solid 1px;
     background-image: url(../imgs/icon.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -58,8 +56,10 @@ nav{
 }
 
 .menu-options{
-    border: blue solid 1px;
-    background-color: brown;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    /*filter: blur(4px);*/
+
     list-style: none;
     display: flex;
     flex-wrap: wrap;
