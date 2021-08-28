@@ -188,6 +188,28 @@ main{
 
 .second{
     width: 100%;
-    height: 55rem;
+    height: auto;
     border: orangered solid 1px;
+    padding: 2rem 4rem;
+}
+
+.second .second-head{
+
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #e96d50;
+    
+}
+
+.second .second-body{
+
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.imggg{
+    width: 100%;
+    height: auto;
 }
