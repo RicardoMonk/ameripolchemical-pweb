@@ -45,19 +45,19 @@ nav{
 }
 
 .menu-icon{
-    background-image: url(../imgs/icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 4rem;
     width: 12rem;
     height: auto;
 
+    margin: 0;
 
 }
 
 .menu-options{
     background-color: var(--primary-color);
-    opacity: 0.8;
+   
     /*filter: blur(4px);*/
 
     list-style: none;
@@ -92,7 +92,6 @@ ul li .menu-link_active {
 
 
 .menu-options li {
-    border: blue solid 1px;
     width: max-content;
     display: flex;
 
