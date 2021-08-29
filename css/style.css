@@ -45,13 +45,13 @@ nav{
 }
 
 .menu-icon{
+    margin: 0;
+    background-color: var(--primary-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 4rem;
     width: 12rem;
     height: auto;
-
-    margin: 0;
 
 }
 
