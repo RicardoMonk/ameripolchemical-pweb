@@ -269,9 +269,55 @@ main{
     height: auto;
 }
 
+.fifth{
+    width: 100%;
+    height: auto;
+    border: #8e2bff solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.fifth p{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
 
+form{
+    background: #fae6e1;
+    height: auto;
+}
 
+.form{
+    width: 100%;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input{
+    background: none;
+    color:black;
+    font-size: 2rem;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+input:focus{
+    outline: none;
+    color: #808080;
+}
+
+label{
+    color: black;
+    font-size: 16px;
+}
 
 footer{
     width: 100%;
