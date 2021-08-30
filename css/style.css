@@ -15,6 +15,10 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    min-width: 320px;
+}
+
 
 header{
     display: flex;
@@ -697,6 +701,22 @@ footer .footer-icons a{
 
 @media (min-width:1024px){
 
+    .main-bgimg{
+        background-image: url(../imgs/foto1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 180%;
+
+        border-bottom: var(--primary-color) solid 8px;
+    
+        width: 100%;
+        height: 92rem;
+    
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
     nav{
     display: flex;
     flex-wrap: wrap;
@@ -704,6 +724,7 @@ footer .footer-icons a{
     flex-direction: row;
     width: 100%;
     height: 100%;
+    background-color:white;
 }
 
 .nav_logo{
@@ -713,22 +734,16 @@ footer .footer-icons a{
     background-size: 12rem;
     width: 18rem;
     height: auto;
+    background-color: var(--primary-color);
 }
 
 .menu-icon{
     display: none;
-    margin: 0;
-    background-color: var(--primary-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 4rem;
-    width: 12rem;
-    height: auto;
 
 }
 
 .menu-options{
-    background-color: var(--primary-color);
+    background-color: white;
    
     /*filter: blur(4px);*/
 
@@ -757,9 +772,9 @@ footer .footer-icons a{
 
 ul li a:hover,
 ul li .menu-link_active {
-    background-color: var(--primary-color);
+    color: var(--primary-color);
     transition: 0.2s;
-    color: #a12b10;
+    color: white;
 }
 
 
@@ -769,6 +784,7 @@ ul li .menu-link_active {
     display: flex;
 
     margin: 0 1rem;
+    color: var(--primary-color);
 
     
 }
@@ -777,7 +793,8 @@ ul li .menu-link_active {
     display: block;
     text-decoration: none;
     padding: 20px 0;
-    color: white;
+    color: var(--primary-color);
+
 }
 
 .nav-menu_visible{
@@ -835,7 +852,7 @@ ul li .menu-link_active {
 .main-land2 .btn-ver{
     width: 35rem;
     height: 8rem;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     border-radius: 10px;
     border: none;
     background-color: var(--primary-color);
@@ -844,7 +861,7 @@ ul li .menu-link_active {
     text-align: center;
     text-decoration: none;
 
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     cursor: pointer;
 }
 
