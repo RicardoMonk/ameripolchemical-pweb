@@ -262,6 +262,7 @@ main{
 }
 
 .fourth-head{
+    width: 100%;
     font-size: 3rem;
     font-weight: bolder;
     text-align: center;
@@ -382,7 +383,7 @@ footer{
     background-color: var(--primary-color);
     color: white;
 
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
 
     justify-content: center;
@@ -429,4 +430,690 @@ footer .footer-icons a{
 .footer-icons img{
     width: 2.5rem;
     margin: 0 1.2rem;
+}
+
+
+@media (min-width:768px){
+
+    .main-bgimg{
+        background-image: url(../imgs/foto1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 180%;
+    
+        width: 100%;
+        height: 92rem;
+    
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .main-land1{
+        width: 100%;
+        height: 50rem;
+        color: white;
+    
+        text-align: center;
+        font-size: 6rem;
+        font-weight:bolder;
+    
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content:flex-end;
+    }
+    
+    .main-land2{
+        width: 100%;
+        height: 13rem;
+    
+        align-items: center;
+        font-weight:lighter;
+    
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+    }
+    
+    .main-land2 .btn-ver{
+        width: 35rem;
+        height: 8rem;
+        padding-top: 2rem;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--primary-color);
+        color: white;
+    
+        text-align: center;
+        text-decoration: none;
+    
+        font-size: 3.5rem;
+        cursor: pointer;
+    }
+    
+    .main-land2 .btn-ver:hover{
+        background-color: #f89a85;
+        transition: 0.2s;
+    }
+
+
+    .fourth{
+        width: 100%;
+        height: auto;
+        padding: 2rem 4.1rem;
+    
+        margin-bottom: 4rem;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-self: center;    
+    }
+    
+    .fourth img{
+        width: 15rem;
+        height: auto;  
+        margin-top: 7rem;
+        margin-bottom: 3rem;
+    }
+    
+    .fourth-head{
+        width: 100%;
+        font-size: 3rem;
+        font-weight: bolder;
+        text-align: center;
+    
+        color: dimgray;
+    }
+    
+    .img3{
+        width: 100%;
+        height: auto;
+    }
+    
+    .fifth{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+    }
+    
+    .fifth p{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+    }
+    
+    form{
+        height: auto;
+    }
+    
+    .form{
+        width: 100%;
+    }
+    
+    form .grupo{
+        position: relative;
+        margin: 35px;
+    
+    }
+    
+    input{
+        background: none;
+        color:black;
+        font-size: 2rem;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid grey;
+    }
+    
+    input:focus{
+        outline: none;
+        color: #808080;
+    }
+    
+    label{
+        color: #808080;
+        font-size: 16px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        transition: 0.4s ease all;
+        pointer-events: none;
+    }
+    
+    input:focus~label,
+    input:valid~label{
+        top: -14px;
+        font-size: 12px;
+        color: var(--primary-color);
+    }
+    
+    .barra{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    
+    .barra::before{
+        content: "";
+        width: 0%;
+        height: 2px;
+        bottom: 0;
+        position: absolute;
+        background: var(--primary-color);
+        transition: 0.3s ease width;
+        left: 0;
+    }
+    
+    
+    input:focus~.barra::before{
+        width: 100%;
+    }
+    
+    button{
+        background: var(--primary-color);
+        border: none;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        color: white;
+        height: 4rem;
+        font-size: 1.6rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: var(--primary-color);
+        color: white;
+    
+        display: inline-block;
+        flex-wrap: wrap;
+    
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    footer .footer-logo{
+        width: 20rem;
+        height: auto;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+    footer .footer-p1{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    
+    footer .footer-p2{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    
+    footer .footer-p3{
+        width: 100%;
+        font-size: 2rem;
+        font-weight:lighter;
+        margin-bottom: 3rem;
+    }
+    
+    footer .footer-icons{
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+    
+    footer .footer-icons a{
+        text-decoration: none;
+    }
+    
+    .footer-icons img{
+        width: 2.5rem;
+        margin: 0 1.2rem;
+    }
+    
+}
+
+
+@media (min-width:1024px){
+
+    nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.nav_logo{
+    background-image: url(../imgs/Logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12rem;
+    width: 18rem;
+    height: auto;
+}
+
+.menu-icon{
+    display: none;
+    margin: 0;
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 4rem;
+    width: 12rem;
+    height: auto;
+
+}
+
+.menu-options{
+    background-color: var(--primary-color);
+   
+    /*filter: blur(4px);*/
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+    position:sticky;
+    left: 0;
+
+    top: 10px;
+    width: 55%;
+    font-size: 1.6rem;
+    height: 6rem;
+
+    left: 30%;
+    transition: left 0.3s;
+
+    /*height: calc(100% - 6rem);
+    /*height: 100%;
+    font-size: 2rem;
+    overflow-y: auto;*/
+}
+
+ul li a:hover,
+ul li .menu-link_active {
+    background-color: var(--primary-color);
+    transition: 0.2s;
+    color: #a12b10;
+}
+
+
+
+.menu-options li {
+    width: max-content;
+    display: flex;
+
+    margin: 0 1rem;
+
+    
+}
+
+.menu-options li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px 0;
+    color: white;
+}
+
+.nav-menu_visible{
+    left: 0;
+}
+
+
+.main-bgimg{
+    background-image: url(../imgs/foto1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    width: 100%;
+    height: 65rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.main-land1{
+    width: 92%;
+    height: 20rem;
+    color: white;
+
+    text-align:right;
+    font-size: 4rem;
+    font-weight:bolder;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content:center;
+
+    margin-top: 13rem;
+}
+
+.main-land2{
+    width: 92%;
+    height: 13rem;
+
+    align-items:flex-end;
+    font-weight:lighter;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    
+
+}
+
+.main-land2 .btn-ver{
+    width: 35rem;
+    height: 8rem;
+    padding-top: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+
+.main-land2 .btn-ver:hover{
+    background-color: #f89a85;
+    transition: 0.2s;
+}
+
+/**/
+main{
+    padding-top: 6rem;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.second{
+    width: 50%;
+    height: auto;
+    padding: 0 4.1rem;
+    padding-top: 20rem;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.second .second-head{
+
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #e96d50;
+    
+}
+
+.second .second-body{
+
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.imggg{
+    width: 50%;
+    height: auto;
+    margin-top: 15rem;
+}
+
+.third{
+    width: 100%;
+    height: auto;
+    padding: 2rem 4.1rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+.third .third-head{
+
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #e96d50;
+    
+}
+
+.third .third-body{
+
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+/**/
+
+.fourth{
+    width: 100%;
+    height: auto;
+    padding: 2rem 4.1rem;
+
+    margin-bottom: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;    
+}
+
+.fourth img{
+    width: 15rem;
+    height: auto;  
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+.fourth-head{
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+
+    color: dimgray;
+}
+
+.img3{
+    width: 100%;
+    height: auto;
+}
+
+.fifth{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.fifth p{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+form{
+    height: auto;
+}
+
+.form{
+    width: 100%;
+}
+
+form .grupo{
+    position: relative;
+    margin: 35px;
+
+}
+
+input{
+    background: none;
+    color:black;
+    font-size: 2rem;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+input:focus{
+    outline: none;
+    color: #808080;
+}
+
+label{
+    color: #808080;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.4s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: var(--primary-color);
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    position: absolute;
+    background: var(--primary-color);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+button{
+    background: var(--primary-color);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    height: 4rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    color: white;
+
+    display: inline-block;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    text-align: center;
+
+}
+
+footer .footer-logo{
+    width: 20rem;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+footer .footer-p1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+footer .footer-p2{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer .footer-p3{
+    width: 100%;
+    font-size: 2rem;
+    font-weight:lighter;
+    margin-bottom: 3rem;
+}
+
+footer .footer-icons{
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+footer .footer-icons a{
+    text-decoration: none;
+}
+
+.footer-icons img{
+    width: 2.5rem;
+    margin: 0 1.2rem;
+}
+
 }
