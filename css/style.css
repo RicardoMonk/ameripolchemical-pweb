@@ -40,10 +40,10 @@ nav{
 }
 
 .nav_logo{
-    background-image: url(../imgs/Logo.png);
+    background-image: url(../imgs/IPAD.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 12rem;
+    background-size: 18rem;
     width: 18rem;
     height: auto;
 }
@@ -438,6 +438,15 @@ footer .footer-icons a{
 
 @media (min-width:768px){
 
+    .nav_logo{
+        background-image: url(../imgs/IPAD.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 18rem;
+        width: 18rem;
+        height: auto;
+    }
+
     .main-bgimg{
         background-image: url(../imgs/foto1.png);
         background-repeat: no-repeat;
@@ -727,13 +736,12 @@ footer .footer-icons a{
 }
 
 .nav_logo{
-    background-image: url(../imgs/Logo.png);
+    background-image: url(../imgs/IPAD.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 12rem;
+    background-size: 18rem;
     width: 18rem;
     height: auto;
-    background-color: var(--primary-color);
 }
 
 .menu-icon{
