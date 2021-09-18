@@ -338,9 +338,9 @@ main{
 }
 
 .carousel__elemento{
-    border: #b9b9b9 solid 1px;
+    border: #c7c6c6 solid 1px;
     border-radius: 10px;
-    background: #dddddd;
+    background: #e8e7e7;
     margin: auto 2rem;
     text-align: center;
 }
