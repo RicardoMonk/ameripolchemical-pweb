@@ -265,12 +265,20 @@ main{
 }
 
 .third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     width: 100%;
     height: auto;
     
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
+}
+
+.third-head{
+    width: 100%;
 }
 
 .third .third-head{
@@ -283,7 +291,49 @@ main{
     
 }
 
-.carousel__contenedor glider{
+.card img{
+    width: 100%;
+  }
+  
+  h1 {
+    margin: 0.5rem 0;
+  }
+  
+  /* container and cards */
+  .container {
+    border: #e96d50 solid 1px;
+    position: relative;
+    width: 90%;
+    height: 300px;
+    overflow: hidden;
+    cursor: grab;
+    /* border-top: 10px solid #f00; */
+  }
+  
+  .cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(10, 300px);
+    grid-gap: 50px;
+    pointer-events: none;
+    /* border-bottom: 10px solid #00f; */
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  }
+  
+  .card__content {
+    color: #4e4e4e;
+    padding: 1rem;
+  }
+
+/*.carousel__contenedor glider{
     display: flex;
     flex-direction: row;
 }
@@ -297,9 +347,9 @@ main{
 
 
 
-/* --- --- CAROUSEL --- --- */
+ --- --- CAROUSEL --- --- 
 
-.carousel__contenedor {
+/*.carousel__contenedor {
     position: relative;
 }
 
@@ -316,7 +366,7 @@ main{
     text-align: center;
     background: none;
     color: var(--secundary-color);
-    /*opacity: 20%;*/
+    /*opacity: 20%;
 } 
 
 .carousel__anterior:hover,
@@ -397,7 +447,7 @@ main{
 
 .carousel__indicadores .glider-dot.active{
     opacity: 1;
-}
+}*/
 
 .fourth{
     width: 100%;
