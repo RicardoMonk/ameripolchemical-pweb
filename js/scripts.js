@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
 
 //this code work to carousel
 
-window.addEventListener('load', function(){
+/*window.addEventListener('load', function(){
     new Glider(document.querySelector('.carousel__lista'),{
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -50,4 +50,23 @@ window.addEventListener('load', function(){
         }
       ]
     });
-});
+});*/
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 40,
+    centeredSlides: true,
+    grabCursor: true,
+    //slidesPerGroup: 3,
+    grabCursor: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
