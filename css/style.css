@@ -441,9 +441,13 @@ main{
     display: block;
     width: 100%;
     height: auto;
-    margin-top: -6rem;
-    margin-bottom: 3rem;
+    margin-top: -1.9rem;
+    margin-bottom: 1.5rem;
     object-fit: cover;
+}
+
+.swiper-slide p {
+    font-size: 1rem;
 }
 
 .swiper-slide a {
