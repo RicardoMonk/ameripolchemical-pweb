@@ -242,6 +242,11 @@ main{
     margin-bottom: 4rem;
 }
 
+.listalista{
+    list-style: none;
+
+}
+
 .second .second-head{
 
     font-size: 2.5rem;
@@ -668,6 +673,9 @@ footer .footer-p2{
 }
 
 footer .footer-p3{
+    list-style: none;
+    color: white;
+    height: auto;
     width: 100%;
     font-size: 2rem;
     font-weight:lighter;
@@ -677,6 +685,7 @@ footer .footer-p3{
 footer .footer-icons{
     width: 100%;
     height: auto;
+    margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
@@ -1155,7 +1164,7 @@ main{
     width: 50%;
     height: auto;
     padding: 0 4.1rem;
-    padding-top: 20rem;
+    padding-top: 13rem;
 
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -1382,7 +1391,10 @@ footer .footer-p2{
 }
 
 footer .footer-p3{
+    list-style: none;
+    color: white;
     width: 100%;
+    height: auto;
     font-size: 2rem;
     font-weight:lighter;
     margin-bottom: 3rem;
@@ -1401,6 +1413,19 @@ footer .footer-icons a{
 .footer-icons img{
     width: 2.5rem;
     margin: 0 1.2rem;
+}
+
+footer .footer-p2{
+    font-size: 1.6rem;
+}
+
+footer .footer-p3:hover{
+    color: var(--secundary-color);
+    transition: .5s;
+}
+
+.footer-icons{
+    margin-top: 2rem;
 }
 
 }
