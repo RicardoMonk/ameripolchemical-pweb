@@ -3,4 +3,3 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/ameripol/public_html/
     - /bin/rsync -av ameripolchemical-web/ $DEPLOYPATH
-    
