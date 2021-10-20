@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ameripol/public_html/
-    - /bin/cp ameripolchemical-web/ $DEPLOYPATH
+    - /bin/cp -R ameripolchemical-web $DEPLOYPATH
